@@ -1,13 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
 }
 
-.header-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+body {
+  background-color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
