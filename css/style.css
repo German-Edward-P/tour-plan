@@ -593,6 +593,9 @@ template {
   .hotel-info__offer {
     margin-top: 0;
   }
+  .hotel-info__name {
+    margin: 0;
+  }
 }
 
 @media (max-width: 992px) {
