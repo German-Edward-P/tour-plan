@@ -1053,6 +1053,9 @@ template {
   .slider {
     height: 250px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -1061,6 +1064,16 @@ template {
   }
   .newsletter {
     padding: 76px 0 83px 0;
+  }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
   }
   .newsletter__title {
     margin-bottom: 37px;
