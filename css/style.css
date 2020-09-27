@@ -768,6 +768,7 @@ img {
 .card__title {
   margin-top: auto;
   margin-bottom: 18px;
+  max-width: 180px;
   color: #ffffff;
   font-style: normal;
   font-weight: bold;
@@ -1459,7 +1460,6 @@ template {
     padding: 19px 0 9px 7px;
   }
   .stars {
-    width: 56px;
     margin-right: 20px;
     margin-bottom: 12px;
   }
