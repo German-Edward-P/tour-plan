@@ -19,6 +19,19 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__legal
+      align-items: start
+    &__title
+      &--legal
+        margin-left: 0
+  .underfooter
+    &__text
+      grid-column: span 3
+      grid-column-end: 6
+      justify-content: space-evenly
 @media  ( max-width: 992px )
   .container,  .newsletter-wrapper, 
     max-width: 700px
@@ -95,6 +108,7 @@
         margin-top: 14px
   .activities
     padding-top: 23px
+    padding-bottom: 49px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -102,7 +116,72 @@
   .card
     width: 339px
     height: 255px
-
+  .footer 
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: repeat(15, minmax(min-content, 1fr))
+      grid-row-gap: 49px
+    &__input
+      flex-basis: 49%
+    &__form
+      padding-left: 0
+      width: 539px
+    &__input
+      flex-basis: 47%
+    &__logo
+      width: 97px
+      grid-row: 1 
+      grid-column: 1 / 4
+    &__social
+      &-network
+        grid-row: 1 
+        grid-column: 5 / 12
+        align-self: center
+      &-links
+        margin-top: 14px
+    &__categories
+      padding-left: 2px
+      grid-row: 2 
+      grid-column: 1 / 5
+    &__additional
+      padding-left: 9px
+      grid-row: 2 
+      grid-column: 5 / 12
+    &__legal
+      padding-left: 20px
+      grid-row: 2 
+      grid-column: 11 / 16
+    &__contact
+      &-details
+        padding-top: 16px
+        grid-column: 1 / 12
+        grid-row: 3 
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__icon-wrapper
+      min-width: 45px
+    &__title
+      &--inline
+        margin-left: -4px
+        margin-top: 13px
+        margin-right: 43px
+      &--mb-3
+        margin-top: -9px
+        margin-bottom: 34px
+    &__item
+      &--mb-2
+        margin-bottom: 20px
+    &__icon
+      margin-left: 8px
+  .underfooter
+    padding-top: 9px
+    padding-bottom: 30px
+    &__text
+      grid-column-end: 4
+      grid-column: span 4
+    &__image
+      grid-column-start: 9
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -195,6 +274,27 @@
     height: 255px
     &__title
       width: 154px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__contact
+      &-form
+        grid-row: 4
+        grid-column: 1 / 7
+    &__social
+      &-network
+        grid-row: 1
+        grid-column: 5 / 14
+    &__additional
+      grid-row: 2
+      grid-column: 5 / 11
+      padding-left: 0
+    &__legal
+      padding-left: 0
+  .underfooter
+    &__text 
+      grid-column-end: 4
+      grid-column: span 6
 @media (max-width: 576px)
   
   .logo
@@ -230,7 +330,43 @@
   .activities
     &__card--bottom
       margin-bottom: 20px
-  
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+      padding-left: 0
+    &__categories
+      grid-row: 4
+      grid-column: 1
+      padding-left: 0 
+    &__legal
+      grid-row: 5
+      grid-column: 1
+      
+      padding-left: 0
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    
+    &__form, &__message, &__input
+      width: 100%
+  .underfooter
+    &__text
+      grid-row: 1
+      grid-column: 1 / 8
     
 
 @media (max-width: 480px) 
@@ -341,6 +477,90 @@
       margin-left: 4px
   .subscribe
     max-width: 280px
-    
+  .footer
+    padding-top: 68px
+    padding-bottom: 20px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 31px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        display: flex
+        flex-direction: column
+        grid-row-gap: 
+        grid-row: 2
+        grid-column: 1
+        row-gap: 6px
+      &-links
+        padding-left: 10px
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      padding-left: 7px
+      grid-row: 5
+      grid-column: 1 
+    &__legal
+      padding-left: 8px
+      grid-row: 3
+      grid-column: 1
+    &__contact
+      &-details
+        padding-top: 12px
+        grid-row: 6
+        grid-column: 1
+      &-form
+        padding-top: 20px
+        grid-row: 7
+        grid-column: 1
+    &__message
+      width: 100%
+      height: 123px
+      margin-bottom: 15px
+      border-radius: 4px
+    &__form
+      display: flex
+      flex-direction: column
+      width: 100%
+      align-items: flex-start
+    &__input
+      width: 100%
+      min-height: 50px
+      padding: 0 30px
+    &__button
+      padding-left: 20px
+      margin-left: 6px
+    &__text
+      padding-left: 6px
+    &__info
+      padding-left: 7px
+      margin-bottom: 14px
+    &__title
+      &--details
+        padding-left: 7px
+      &--inline
+        padding-left: 12px
+        margin-top: 8px
+      &--mb-3
+        margin-bottom: 15px
+        padding-left: 6px
+  .order-5
+    order: 4
+  .order-4
+    order: 5
+  .underfooter
+    padding-bottom: 18px
+    &-wrapper
+      grid-template-columns: 1fr
+    &__text
+      grid-row: 1
+      grid-column: 1
+      margin-bottom: 11px
 
-
+    &__image
+      grid-row: 2
+      grid-column: 1
+      padding-left: 5px

@@ -1,0 +1,24 @@
+.underfooter
+  background-color: $dark
+  color: $light
+  padding-top: 49px
+  padding-bottom: 43px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(8, minmax(min-content, 1fr))
+    align-items: center
+  &__text
+    grid-column: span 2
+    grid-column-end: 6
+    justify-content: space-between
+    display: flex
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__title
+    &--legal
+
+  &__image
+    grid-column: 6
+    grid-column-start: 8
