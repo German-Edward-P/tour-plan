@@ -38,6 +38,7 @@ img {
 
 .navbar-top__menu-button {
   display: none;
+  outline: none;
 }
 
 .navbar__search {
@@ -70,6 +71,10 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+}
+
+.navbar-menu__item_mobile_visible {
+  display: none;
 }
 
 .logo {
@@ -1677,8 +1682,55 @@ template {
   .swiper-container {
     width: 100%;
   }
-  .navbar__search, .navbar__user, .navbar-menu {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
     display: none;
+  }
+  .navbar__user_mobile_visible, .navbar__search_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .navbar-bottom {
+    padding-top: 30px;
+    display: none;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: block;
   }
   .menu-button {
     display: -webkit-box;
@@ -1705,6 +1757,14 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__avatar {
+    margin: 0;
+  }
+  .user__name_light {
+    color: #ffffff;
+    margin: 0;
+    margin-top: 10px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
