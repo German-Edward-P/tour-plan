@@ -16,12 +16,13 @@ var hotelSlider = new Swiper('.hotel-slider', {
 });
 
 var reviewsSlider = new Swiper('.reviews-slider', {
+  
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
   // Optional parameters
-
+  
   loop: true,
 
   // Navigation arrows
