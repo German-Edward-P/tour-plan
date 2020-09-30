@@ -1999,12 +1999,31 @@ template {
   .container, .newsletter-wrapper {
     max-width: 320px;
   }
+  body {
+    padding-top: 70px;
+  }
   .navbar-top {
-    padding: 19px 0 30px 0;
+    padding: 22px 0 30px 0;
   }
   .navbar-top__menu-button {
     margin-bottom: -7px;
     margin-right: 7px;
+  }
+  .navbar__search {
+    width: 243px;
+    height: 40px;
+    margin-bottom: 26px;
+  }
+  .navbar-bottom--visible {
+    padding-top: 13px;
+    top: 71px;
+    overflow-y: scroll;
+  }
+  .navbar__user_mobile_visible {
+    margin-bottom: 12px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 15px;
   }
   .breadcrumb-list {
     padding: 19px 0 9px 7px;
@@ -2176,6 +2195,7 @@ template {
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
+    padding-left: 8px;
   }
   .footer__categories {
     padding-left: 7px;
