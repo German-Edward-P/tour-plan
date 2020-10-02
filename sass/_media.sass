@@ -186,6 +186,14 @@
       grid-column: span 4
     &__image
       grid-column-start: 9
+  .modal
+    &__info
+      &_order-5
+        order: 4
+        margin-bottom: 15px
+    &__button
+      &_order-4
+        order: 5 
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -340,6 +348,21 @@
     &__text 
       grid-column-end: 4
       grid-column: span 6
+  .modal
+    &__dialog
+      width: 300px
+      align-items: center
+      display: flex
+      flex-direction: column
+    &__form
+      width: 230px
+    &__info
+      &_order-5
+        order: 4
+        margin-bottom: 15px
+    &__button
+      &_order-4
+        order: 5
 @media (max-width: 576px)
   
   .logo
@@ -412,7 +435,15 @@
     &__text
       grid-row: 1
       grid-column: 1 / 8
-    
+  .modal
+    &__dialog
+      width: 360px
+      align-items: center
+
+    &__form
+      width: 250px
+
+     
 
 @media (max-width: 480px) 
   .container, .newsletter-wrapper
@@ -654,3 +685,13 @@
         margin-bottom: 28px
       &_order-4
         order: 4
+  .modal
+    &__dialog
+      width: 90%
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__form
+      width: 250px
+    &__info 
+      margin-bottom: 15px
