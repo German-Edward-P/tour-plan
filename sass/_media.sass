@@ -187,6 +187,15 @@
     &__image
       grid-column-start: 9
   .modal
+    &__dialog
+      height: 85%
+      width: 300px
+      display: flex
+      flex-direction: column
+      align-items: center
+      overflow-y: scroll
+    &__form
+      width: 250px
     &__info
       &_order-5
         order: 4
@@ -354,6 +363,7 @@
       align-items: center
       display: flex
       flex-direction: column
+      overflow-y: scroll
     &__form
       width: 230px
     &__info
@@ -437,9 +447,10 @@
       grid-column: 1 / 8
   .modal
     &__dialog
-      width: 360px
+      width: 300px
+      height: 85%
       align-items: center
-
+      overflow-y: scroll
     &__form
       width: 250px
 
@@ -687,11 +698,12 @@
         order: 4
   .modal
     &__dialog
-      width: 90%
+      width: 300px
       height: 90%
       display: flex
       flex-direction: column
       align-items: center
+      overflow-y: scroll
     &__form
       width: 250px
     &__info 
