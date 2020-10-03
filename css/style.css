@@ -1203,6 +1203,8 @@ form {
   opacity: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  max-height: calc( 100% - 30px);
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -1864,8 +1866,7 @@ template {
         grid-column-start: 9;
   }
   .modal__dialog {
-    height: 85%;
-    width: 300px;
+    max-height: calc(100% -30px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1876,7 +1877,7 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .modal__form {
     width: 250px;
@@ -2108,7 +2109,6 @@ template {
     grid-column: span 6;
   }
   .modal__dialog {
-    width: 300px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2119,10 +2119,6 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow-y: scroll;
-  }
-  .modal__form {
-    width: 230px;
   }
   .modal__info_order-5 {
     -webkit-box-ordinal-group: 5;
@@ -2239,15 +2235,9 @@ template {
     grid-column: 1 / 8;
   }
   .modal__dialog {
-    width: 300px;
-    height: 85%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow-y: scroll;
-  }
-  .modal__form {
-    width: 250px;
   }
 }
 
@@ -2285,8 +2275,11 @@ template {
     padding: 19px 0 9px 7px;
   }
   .stars {
+    width: 49px;
     margin-right: 23px;
     margin-bottom: 12px;
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
   }
   .logo {
     margin-left: 7px;
@@ -2295,6 +2288,16 @@ template {
     padding-top: 14px;
     padding-left: 0;
     padding-bottom: 3px;
+  }
+  .hotel-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hotel-grid {
     -webkit-box-align: center;
@@ -2597,7 +2600,6 @@ template {
   }
   .modal__dialog {
     width: 300px;
-    height: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2608,10 +2610,6 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow-y: scroll;
-  }
-  .modal__form {
-    width: 250px;
   }
   .modal__info {
     margin-bottom: 15px;

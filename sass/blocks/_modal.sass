@@ -13,7 +13,7 @@
     &--visible
       visibility: visible
       opacity: 1
-      
+  
   &__dialog
     position: fixed
     top: 50%
@@ -28,7 +28,8 @@
     visibility: hidden
     opacity: 0
     transition: 0.2s
-    
+    max-height: calc( 100% - 30px )
+    overflow-y: auto
     &--visible
       visibility: visible
       opacity: 1
