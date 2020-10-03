@@ -614,6 +614,7 @@ form {
   position: absolute;
   min-width: 65px;
   max-width: 85px;
+  cursor: pointer;
   top: 0;
   right: 0;
   height: 100%;
@@ -703,6 +704,7 @@ form {
   background-color: transparent;
   z-index: 99;
   outline: none;
+  cursor: pointer;
 }
 
 .reviews-slider__button--prev {
@@ -1082,6 +1084,10 @@ form {
   line-height: 15px;
 }
 
+.footer__button {
+  cursor: pointer;
+}
+
 .footer__info {
   font-style: normal;
   font-weight: bold;
@@ -1178,6 +1184,7 @@ form {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .modal__close {
@@ -2546,6 +2553,7 @@ template {
   }
   .modal__dialog {
     width: 90%;
+    height: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
