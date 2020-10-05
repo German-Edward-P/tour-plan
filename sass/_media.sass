@@ -7,10 +7,10 @@
         margin-top: 0
       &__name
         margin: 0
-    &-slider 
+    &-slider
       width: 590px
       margin-left: 0
-  .swiper 
+  .swiper
     &-slide
       &__picture
         width: 100%
@@ -21,7 +21,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__legal
       align-items: start
     &__title
@@ -33,9 +34,9 @@
       grid-column-end: 6
       justify-content: space-evenly
 @media  ( max-width: 992px )
-  .container,  .newsletter-wrapper, 
+  .container,  .newsletter-wrapper,
     max-width: 700px
-  .logo 
+  .logo
     width: 132px
     margin-top: -1px
   .navbar
@@ -43,7 +44,7 @@
       padding: 30px 0
     &__search
       margin-left: auto
-    
+
     &-menu
       padding-right: 14px
       padding-left: 14px
@@ -67,15 +68,17 @@
         margin-top: 0
       &__rating
         margin-top: 6px
+    &-name
+      // max-width: 459px
     &-grid
       flex-direction: column
-    &-right 
+    &-right
       flex-direction: row
     &-slider
       width: 100%
-    &__slider 
+    &__slider
       margin-bottom: 30px
-  .booking 
+  .booking
     padding: 28px 22px
     width: 340px
     &__call-center
@@ -83,12 +86,12 @@
   .search
     &__input
       padding-left: 23px
-      width: 340px 
+      width: 340px
     &__button
-      margin-right: 
+      margin-right:
   .newsletter
-    padding: 92px 0 73px 0 
-  .map 
+    padding: 92px 0 73px 0
+  .map
     width: 340px
   .reviews
     margin-bottom: 27px
@@ -101,7 +104,7 @@
       text-transform: uppercase
     &-slider
       &__item
-        max-width: 579px 
+        max-width: 579px
       &__button--prev
         margin-left: 0
         margin-top: 14px
@@ -118,8 +121,8 @@
   .card
     width: 339px
     height: 255px
-  .footer 
-    padding-top: 73px
+  .footer
+    padding-top: 71px
     &-wrapper
       grid-template-columns: repeat(15, minmax(min-content, 1fr))
       grid-row-gap: 49px
@@ -129,35 +132,42 @@
       padding-left: 0
       width: 539px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       width: 97px
-      grid-row: 1 
+      grid-row: 1
       grid-column: 1 / 4
+      padding-top: 2
+      &_link
+        grid-row: 1
+        grid-column: 1 / 4
+        margin-top: 0
+
     &__social
       &-network
-        grid-row: 1 
+        grid-row: 1
         grid-column: 5 / 12
         align-self: center
       &-links
         margin-top: 14px
     &__categories
       padding-left: 2px
-      grid-row: 2 
+      grid-row: 2
       grid-column: 1 / 5
     &__additional
       padding-left: 9px
-      grid-row: 2 
+      grid-row: 2
       grid-column: 5 / 12
     &__legal
       padding-left: 20px
-      grid-row: 2 
+      grid-row: 2
       grid-column: 11 / 16
     &__contact
       &-details
-        padding-top: 12px
+        padding-top: 10px
         grid-column: 1 / 12
-        grid-row: 3 
+        grid-row: 3
       &-form
         grid-column: span 5
         grid-row: 4
@@ -166,11 +176,12 @@
     &__title
       &--inline
         margin-left: -4px
-        margin-top: 13px
+        margin-top: 14px
         margin-right: 43px
       &--mb-3
-        margin-top: -10px
-        margin-bottom: 34px
+        margin-top: -13px
+        margin-bottom: 36px
+        margin-left: -1px
     &__item
       &--mb-2
         margin-bottom: 19px
@@ -179,7 +190,7 @@
     &__text
       padding-left: 4px
   .underfooter
-    padding-top: 10px
+    padding-top: 9px
     padding-bottom: 29px
     &__text
       grid-column-end: 4
@@ -194,6 +205,8 @@
       flex-direction: column
       align-items: center
       overflow-y: auto
+    &__message
+      margin-bottom: 15px
     &__form
       width: 250px
     &__info
@@ -202,7 +215,7 @@
         margin-bottom: 15px
     &__button
       &_order-4
-        order: 5 
+        order: 5
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -212,7 +225,7 @@
   body
     padding-top: 78px
   .navbar
-    
+
     &--mobile
       &_fixed
         position: fixed
@@ -229,7 +242,7 @@
     &__user
       flex-direction: column
       justify-self: center
-      
+
     &-bottom
       padding-top: 30px
       display: none
@@ -273,7 +286,7 @@
         margin-top: 10px
   .stars
     flex-basis: auto
-  .hotel 
+  .hotel
     &-name
       flex-basis: 100%
     &-wrapper
@@ -281,28 +294,31 @@
     &-info
       &__text
         width: 100%
-      &__name 
+      &__name
         margin-top: 10px
         margin-bottom: 0
       &__description
 
       &__rating
         display: none
-      &__offer 
+      &__offer
         order: -1
         margin: 0
-  
+
   .hotel
     &-right
       flex-direction: column
       height: 450px
     &-slider
       height: 350px
+    &-info
+      &__name
+        // max-width: 459px
   .booking
     width: 100%
-  .map 
-    width: 100%   
-  .newsletter 
+  .map
+    width: 100%
+  .newsletter
     &-wrapper
       flex-direction: column
       align-items: start
@@ -338,7 +354,8 @@
       // width: 154px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__contact
       &-form
         grid-row: 4
@@ -354,7 +371,7 @@
     &__legal
       padding-left: 0
   .underfooter
-    &__text 
+    &__text
       grid-column-end: 4
       grid-column: span 6
   .modal
@@ -363,7 +380,7 @@
       align-items: center
       display: flex
       flex-direction: column
-     
+
     &__form
       // width: 230px
     &__info
@@ -374,17 +391,20 @@
       &_order-4
         order: 5
 @media (max-width: 576px)
-  
+
   .logo
     width: 99px
-  
+
   .hotel
     padding-bottom: 40px
-    &-slider 
+    &-slider
       height: 250px
     &__slider
       margin-bottom: 20px
-  .subscribe 
+    &-info
+      &__name
+        flex-basis: 100%
+  .subscribe
     width: 100%
   .newsletter
     padding: 76px 0 83px 0
@@ -399,7 +419,7 @@
       &__title
         margin-bottom: 37px
         margin-top: 0
-  .reviews 
+  .reviews
     &__title
       margin-top: 0
       margin-bottom: 42px
@@ -425,11 +445,11 @@
     &__categories
       grid-row: 4
       grid-column: 1
-      padding-left: 0 
+      padding-left: 0
     &__legal
       grid-row: 5
       grid-column: 1
-      
+
       padding-left: 0
     &__contact
       &-details
@@ -438,8 +458,10 @@
       &-form
         grid-row: 7
         grid-column: 1
-    
-    &__form, &__message, &__input
+    &__input
+      &-group
+        width: 100%
+    &__form, &__message,
       width: 100%
   .underfooter
     &__text
@@ -448,20 +470,18 @@
   .modal
     &__dialog
       // width: 300px
-      // height: 90%
+
       align-items: center
-      // overflow-y: scroll
+
     &__form
       // width: 250px
 
-     
-
-@media (max-width: 480px) 
+@media (max-width: 480px)
   .container, .newsletter-wrapper
     max-width: 300px
   body
     padding-top: 70px
-  .navbar-top 
+  .navbar-top
     padding: 22px 0 30px 0
     &__menu-button
       margin-bottom: -7px
@@ -482,19 +502,19 @@
           margin-bottom: 12px
     &-menu
       &__item
-        
+
         margin-bottom: 15px
-    
+
   .breadcrumb-list
     padding: 19px 0 9px 7px
-  .stars 
+  .stars
     width: 49px
     margin-right: 23px
     margin-bottom: 12px
     flex-basis: unset
   .logo
     margin-left: 7px
-  .hotel 
+  .hotel
     padding-top: 14px
     padding-left: 0
     padding-bottom: 3px
@@ -509,7 +529,7 @@
     &-name
       margin-top: 0
       margin-left: -1
-    &-info  
+    &-info
       &__offer
         margin-left: 1px
         margin-bottom: 9px
@@ -522,19 +542,19 @@
       width: 279px
       height: 179px
       margin-right: 0
-  .booking 
+  .booking
     width: 279px
-    height: 210px 
+    height: 210px
     &__button
       width: 235px
-      margin-left: 1px 
+      margin-left: 1px
     &__call-center
       margin-bottom: 15px
   .map
     width: 279px
-    height: 176px 
+    height: 176px
     margin-bottom: 34px
-  .reviews 
+  .reviews
     padding: 40px 0 70px 0
     margin-bottom: 0
     &__title
@@ -575,7 +595,7 @@
     height: 255px
     &__button
       padding: 6px 20px
- 
+
   .newsletter
     padding: 74px 0 63px 0
     &-title
@@ -583,7 +603,7 @@
         margin-top: 7px
     &__subscribe
       margin-left: 7px
-   
+
     &-title
       margin-bottom: 37px
       margin-left: 4px
@@ -592,11 +612,12 @@
       &__input
         padding-left: 20px
   .footer
-    padding-top: 68px
+    padding-top: 69px
     padding-bottom: 20px
     &-wrapper
       grid-template-columns: 1fr
       grid-row-gap: 31px
+      grid-column-gap: 3px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -604,7 +625,7 @@
       &-network
         display: flex
         flex-direction: column
-        grid-row-gap: 
+        grid-row-gap:
         grid-row: 2
         grid-column: 1
         row-gap: 6px
@@ -617,7 +638,7 @@
     &__categories
       padding-left: 7px
       grid-row: 5
-      grid-column: 1 
+      grid-column: 1
     &__legal
       padding-left: 8px
       grid-row: 3
@@ -628,7 +649,7 @@
         grid-row: 6
         grid-column: 1
       &-form
-        padding-top: 15px
+        padding-top: 39px
         grid-row: 7
         grid-column: 1
     &__message
@@ -642,6 +663,7 @@
       width: 100%
       align-items: flex-start
     &__input
+
       width: 100%
       min-height: 50px
       padding: 0 30px
@@ -655,16 +677,26 @@
       margin-bottom: 14px
     &__item
       &--mb-2
+        margin: 0
+        // margin-bottom: 21px
+      &_map-marker
+        margin-bottom: 22px
+      &_phone
         margin-bottom: 21px
     &__title
       &--details
-        padding-left: 7px
+        padding-left: 10px
+        margin-top: 2px
       &--inline
         padding-left: 12px
-        margin-top: 8px
+        margin-top: 5px
       &--mb-3
-        margin-bottom: 15px
+        margin-bottom: 16px
         padding-left: 6px
+      &_additional
+        margin-top: -2px
+      &_categories
+        margin-top: -1px
     &__link
       &_image-1
         margin-right: 10px
@@ -672,6 +704,11 @@
         margin-right: 13px
     &__icon-wrapper
       margin-right: -8px
+    &__icon
+      &_mail
+        margin-top: -3px
+      &_phone
+        margin-top: -2px
   .order-5
     order: 4
   .order-4
@@ -708,8 +745,8 @@
       display: flex
       flex-direction: column
       align-items: center
-      // overflow-y: scroll
+
     &__form
       // width: 250px
-    &__info 
+    &__info
       margin-bottom: 15px
