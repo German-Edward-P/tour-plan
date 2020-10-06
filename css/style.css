@@ -1884,6 +1884,9 @@ template {
     margin-bottom: 36px;
     margin-left: -1px;
   }
+  .footer__title--details {
+    margin-left: 0px;
+  }
   .footer__item--mb-2 {
     margin-bottom: 19px;
   }
@@ -2386,7 +2389,10 @@ template {
     margin-left: 1px;
   }
   .booking__call-center {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+  }
+  .booking__per-room {
+    margin-top: -2px;
   }
   .map {
     width: 279px;
