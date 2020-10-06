@@ -69,8 +69,8 @@ $(document).ready(function () {
           minlength: 2,
         },
         phone: {
-          minlength: 10,
-          maxlength: 10,
+          minlength: 18,
+          maxlength: 18,
         },
       },
       messages: {
@@ -90,4 +90,6 @@ $(document).ready(function () {
     });
   });
   AOS.init();
+  $('.modal__input_phone').mask('+7 (000) 000 00 00', { placeholder: "+7 (999) 999 99 99" });
+  $('.footer__input_phone').mask('+7 (000) 000 00 00', { placeholder: "+7 (999) 999 99 99" });
 });
