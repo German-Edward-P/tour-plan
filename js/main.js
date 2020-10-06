@@ -23,7 +23,7 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
     // Optional parameters
-    // autoHeight: true,
+
     loop: true,
 
     // Navigation arrows
@@ -68,6 +68,10 @@ $(document).ready(function () {
         name: {
           minlength: 2,
         },
+        phone: {
+          minlength: 10,
+          maxlength: 10,
+        },
       },
       messages: {
         name: {
@@ -85,4 +89,5 @@ $(document).ready(function () {
       },
     });
   });
+
 });
