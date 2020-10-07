@@ -154,6 +154,7 @@ form {
   padding-right: 75px;
   border: none;
   background: #F5FAFE;
+  outline: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;

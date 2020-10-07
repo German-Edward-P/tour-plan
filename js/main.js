@@ -18,10 +18,7 @@ $(document).ready(function () {
 
   var reviewsSlider = new Swiper('.reviews-slider', {
 
-    keyboard: {
-      // enabled: true,
-      // onlyInViewport: true,
-    },
+
     // Optional parameters
 
     loop: true,
