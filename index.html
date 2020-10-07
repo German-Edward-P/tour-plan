@@ -193,8 +193,8 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="email" name="email" class="subscribe__input" placeholder="Your email address">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <input type="email" name="email" class="input subscribe__input" placeholder="Your email address" required>
         <button class="subscribe__button">
           Send
         </button>
@@ -427,15 +427,19 @@ quest" class="card__image">
             <li class="footer__item footer__item--mb-2 footer__item_phone">
               <div class="footer__icon-wrapper"><img src="img/phone.svg" class="footer__icon footer__icon_phone" alt="">
               </div>
-              Tel (business hours) : 269 1500<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              Tel (business hours) : <a class="footer__icon_link" href=" 269 1500">269 1500</a><br>
+              Tel (hotline) Monday - Saturday: <a class="footer__icon_link" href="52-56-61-38"> 52-56-61-38</a>
+              (08:00 am
+              – 20:00 pm)
+              Tel (hotline) Sunday: <a class="footer__icon_link" href="52-56-61-38">52-56-61-38</a> (08:00 am –
+              14:00
+              pm)
 
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img src="img/mail.svg" class="footer__icon footer__icon_mail" alt="">
               </div>
-              cherly.lawson@example.com
+              <a class="footer__icon_link" href="mailto: cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>

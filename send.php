@@ -15,10 +15,15 @@ $title = "Новое обрщение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $phone<br><br>
+<b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+$title = "Новое обрщение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>email:</b> $email<br>
 
+";
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -31,14 +36,15 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'germanfirsti@gmail.com'; // Логин на почте
-    $mail->Password   = '152428okg'; // Пароль на почте
+    $mail->Password   = 'ing232728'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('germanfirsti@gmail.com', 'German Palamar'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('krutishkagerka@yandex.ru');  
-    
+   
+
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -56,4 +62,3 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
-// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

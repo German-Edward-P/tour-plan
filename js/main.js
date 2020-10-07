@@ -2,7 +2,7 @@ $(document).ready(function () {
   var hotelSlider = new Swiper('.hotel-slider', {
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true,
     },
     // Optional parameters
 
@@ -19,8 +19,8 @@ $(document).ready(function () {
   var reviewsSlider = new Swiper('.reviews-slider', {
 
     keyboard: {
-      enabled: true,
-      onlyInViewport: false,
+      // enabled: true,
+      // onlyInViewport: true,
     },
     // Optional parameters
 
@@ -85,11 +85,18 @@ $(document).ready(function () {
         },
         phone: {
           required: "Required phone number",
+          minlength: "Please enter at least 10 number"
         },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        }
       },
     });
   });
+
   AOS.init();
+
   $('.modal__input_phone').mask('+7 (000) 000 00 00', { placeholder: "+7 (999) 999 99 99" });
-  $('.footer__input_phone').mask('+7 (000) 000 00 00', { placeholder: "+7 (999) 999 99 99" });
+  $('.footer__input_phone').mask('+7 (000) 000 00 00', { placeholder: "+7 (999) 999 99 99*" });
 });
